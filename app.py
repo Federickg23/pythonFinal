@@ -9,8 +9,9 @@ Uni:  fag2113
 """
 
 #import statements
+import requests
 from flask import Flask, render_template
-
+from flask_sqlalchemy import SQLAlchemy
 #Flask app variable
 app = Flask(__name__)
 
@@ -22,6 +23,10 @@ def hello():
 @app.route("/1006")
 def classPage():
     return render_template("1006.html")
+
+@app.route("/weather")
+def weather():
+    return render_template("weather.html")
 
 #start the server
 if __name__ == "__main__":
