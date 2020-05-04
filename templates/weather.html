@@ -9,12 +9,28 @@
     <title>What's the weather like?</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/primary.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 
 <body>
+    <div class="header" id="myHeader">
+            <div class="inner_header">
+                <div class = "logo_container">
+                    <h1>F G</h1>
+                </div>
+
+                <ul class="navigation">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/weather"><li>Weather</li></a>
+                    <a href="/assignments"><li>Assignments</li></a>
+                </ul>
+
+            </div>
+        </div>
+    <center>
     <section class="hero is-primary">
         <div class="hero-body">
-            <div class="container">
+            <div class="center">
                 <h1 class="title">
                     What's the weather like?
                 </h1>
@@ -70,6 +86,7 @@
             </div>
         </div>
     </section>
+    </center>
     <footer class="footer">
     </footer>
 </body>
