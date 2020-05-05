@@ -37,7 +37,7 @@
                 <ul class="navigation">
                     <a href="/"><li>Home</li></a>
                     <a href="/weather"><li>Weather</li></a>
-                    <a href="/assignments"><li>Assignments</li></a>
+                    <a href="/Wushu"><li>Wushu</li></a>
                 </ul>
 
             </div>
@@ -58,8 +58,75 @@
                     <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Something of interest</a></li>
                     <li><a href="https://stackoverflow.com/">A place to get answers</a></li>
                 </ol>
+                <p>Additionally, below one can find a list of my favorite courses so far, and the professor who taught them!</p>
+                <table id="classes">
+                    <tr>
+                        <th>Course</th>
+                        <th>Semester</th>
+                        <th>Professor</th>
+                    </tr>
+                    <tr>
+                        <td>Intro To Comp For Eng/App</td>
+                        <td>Spring 2020</td>
+                        <td>Timothy Paine</td>
+                    </tr>
+                    <tr>
+                        <td>Artificial Intelligence</td>
+                        <td>Spring 2020</td>
+                        <td>Ansaf Salleb-Aouissi</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Interfaces</td>
+                        <td>Spring 2020</td>
+                        <td>John Kender</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Programming</td>
+                        <td>Fall 2020</td>
+                        <td>Jae Woo Lee</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Programming</td>
+                        <td>Fall 2020</td>
+                        <td>Jae Woo Lee</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Math</td>
+                        <td>Fall 2020</td>
+                        <td>Ansaf Salleb-Aouissi</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures in Java</td>
+                        <td>Spring 2019</td>
+                        <td>Paul Blaer</td>
+                    </tr>
+                    <tr>
+                        <td>Honors Intro to Computer Science</td>
+                        <td>Fall 2019</td>
+                        <td>John Kender</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the header
+            var header = document.getElementById("myHeader");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
 </html>
 

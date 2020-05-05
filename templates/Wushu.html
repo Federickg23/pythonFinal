@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--specifies title of the page !-->
+    <meta http-equiv="content-type" content="text/html; charset=uft-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/primary.css') }}">
+    <title>Home</title>
+    <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the header
+            var header = document.getElementById("myHeader");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    <head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="inner_header">
+                <div class = "logo_container">
+                    <h1>F G</h1>
+                </div>
+
+                <ul class="navigation">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/weather"><li>Weather</li></a>
+                    <a href="/Wushu"><li>Wushu</li></a>
+                </ul>
+
+            </div>
+        </div>
+        <div>
+            <center>
+                <h1>Welcome to Wushu!</h1>
+                <p style="width:50%;">At Columbia, I'm a member of the Columbia Wushu club (and I'm also on their excecutive board). It's a performance-based martial
+                arts group, and we even get to use weapons! I'm currently proficient in staff, but am learning broadsword. Below are a few instructional videos
+                that can help anyone trying to learn the broadsword form.</p>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/7MJBl55JgP8?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/wh-sN2ZR-bg?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/jSWJqbl94Fg?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/5yGmG6femA4?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/QrvM10O0DBU?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/1ohZtj15XQ0?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/RcVVTXqBnoo?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/Wl4klnFhQ4w?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/6t49XDuP83Y?list=PL1D51309B147C4015" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h3>And now, as a bonus treat for making it this far...</h3>
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/ZzQHhNuIWDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+
+</body>
+<script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the header
+            var header = document.getElementById("myHeader");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+</html>
